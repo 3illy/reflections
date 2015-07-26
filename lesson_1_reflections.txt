@@ -1,0 +1,27 @@
+Q: How did viewing a diff between two versions of a file help you see the bug that was introduced?
+
+A: Viewing the diff between the two files expediated all the searching that I would have otherwise had to do manually.  This meant that I was spending my time comparing the differences rather than looking for them.  Since the lines were quite short it was easy to see where the differences where, and then to correct them.
+
+Q: How could having easy access to the entire history of a file make you a more efficient programmer in the long term?
+
+A: By having access to many periodicly saved versions of a file you are working on it can be easier to move back to a previous working version either a few changes ago or all the way back to a much older version.  This can also mean that when looking at the diff between two files you can use a more closely related working file where there will be much fewer differences to sift through.
+
+Q: What do you think are the pros and cons of manually choosing when to create a commit, like you do in Git, vs having versions automatically saved, like Google docs does?
+
+A: Right off the bat the only real con is that it leaves open the possibility of human error, which exists already and a user should be experienced with dealing with such errors already.  The big pros are that you can make logical choices as to when to commit these changes  and have a note or comment attached to each one explaining to you or anyone else viewing the commit as to what was changed and why.  The other pro is to avoid bloat from idle time or having a commit that is not a working version because you were in the middle of editing a line when it saved, not creating a usefull version to have stored.
+
+Q: Why do you think some version control systems, like Git, allow saving multiple files in one commit, while others, like Google Docs, treat each file seperately?
+
+A: Tracking multiple files is almost essential for version control of a large project that includes many different files in its archetecture.  This seems to be an issue almost exclusively to code and projects that include code however, as it is most often through this code that the other files are accessed.  Many other mediums like writting and images are just fine as seperate files commited seperately as they do not reference or influence eachother.
+
+Q: How can you use the commands git log and git diff to view the history of files?
+
+A: so by using git log within the directory of the repository i can take a look through all the different commits that have been made (along with the date they were made and the autor of the commit).  Each commit has an ID, which i can mark and coppy out of the log and then enter into a git diff function to view the changes made between the two files.
+
+Q: How might using version control make you more confident to make changes that could break something?
+
+A: So by having a safe jump off point ( a version that already works) I can then make sweeping changes to the code in a new commit that I can always checkout out of to go back to a working version, or take a look and see what exactly got changed between the two, making it easier to find and rever away from problemms.
+
+Q: Now that you have your workspace set up, what do you want to try using git for?
+
+A: Now that I have my git all ready I'm going to start developing my projects to use version control, and maybe even go back into old projects and convert them to repositories.  Also going to be persuing the other prerequisites for the full stack developer nanodegree in auguest.
