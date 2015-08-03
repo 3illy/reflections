@@ -1,0 +1,27 @@
+Q: What happens when you initialize a repository? Why do you need to do it?
+
+A: When I initialize a git repository I tirn a regular directory into a git repository, notably by creating a .git file where git does all its stuff.  I need to do this because otherwise there is no way for git to interact with those files.
+
+Q: How is the staging area different from the working directory in the repository? What value do you think it offers?
+
+A: The working directory takes into accound all the local files in the directory, where as the staging area includes all files that are being deliberately tracked by git.  This is a good system as it prevents unwanted files from being accidentally commited as well as being able to store any files you want to use locally but don't want to add to the repository are that you feel are unecissary to add to the repository.
+
+Q: How can you use the staging are to make sure you have one commit per logical change?
+
+A: By using the staging area before committing I can make sure that even if I worked on several files between commitments I can still break them down into smaller commits for ease of recovery.  This also lets me commit changes if I have yet unresolved changes in my working directory.
+
+Q: What are some situations where branches would be helpful in keeping your history organized? How would branches help?
+
+A: Branches can be very helpfull to create an easily found backup or stable version of your program, as well as letting you try out new variations without abandoning your original code.  Finally they let you make different versions that can run paralell to one another such as easy mode or colourblind mode.
+
+Q: How do the diagrams help you visualize the branch structure?
+
+A: Looking at the diagrams makes very clear how certain commits are isolated from eachother either in a seperate branch or in no branch at all.
+
+Q: What is the result of merging two branches together? Why do we represent it in the diagrammm the way we do?
+
+A: When merging two branches together we can take two seperately developed versions of the same software and combine themm to mmake one new version with the changes made in both.  The merging process described by the diagram showed that the history of both versions remains intact after the merce, so earlier versions of both are still accessable.
+
+Q: What are the pros and cons of Git's automatic merging vs. always doing merges manually?
+
+A: An automatic merging process can speed up team colaberation a whole lot, and make testing a change before committing to it that much easier in a new branch.  The downside is that when a conflict occurs where the same lines of code have been changed or moved be two different users they will have to either agree on or one will have to unilaterally make a change to the original file to continue with the commit.
